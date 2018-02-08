@@ -1,8 +1,16 @@
-//import React from 'react';
-//import Chrips from './Chrips';
+import React from 'react';
+//import Chrips from './Chirps';
 
-function Lists() {
+const Lists = (props) => {
+    let listItem = props.chirp.map((chirp) => {
+        return (
+            <li id="list">{ chirp.value }</li>
+        );
+    });
 
+    return (
+        <ul>{ listItem }</ul>
+    )
 };
 
 export default Lists;

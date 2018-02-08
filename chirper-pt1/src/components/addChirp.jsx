@@ -1,6 +1,15 @@
 import React from 'react';
-//import { Chirps } from './Chirps';
+import List from './list'
 
+const addChirp = () => {
+    return (
+        <div>
+        <button onClick="{}">SUBMIT</button>
+        <li>{  }</li>
+        </div>
+    )
+}
+/*
 class addChirp extends React.Component() {
     constructor(props) {
        super(props)
@@ -22,20 +31,18 @@ class addChirp extends React.Component() {
             ]
         };
 
-        this.props = this.state;
-
-        const list = () => {
+        const items = () => {
             return <li>{ this.state.chirps }</li>
             
         };
      
         const addList = () => {
-            const newChirps = this.state.chirps;
-            const listItems = newChirps.map((newChirps) => <list key={ newChirps.toString() } value= { newChirps }/> );
+            let newChirps = items();
+            let newList = newChirps.keys(this.state.chirps).map(function())
      
             return (
             <ul className="chirpslist">
-            {listItems}
+            {newList}
             </ul>)
              
         };
@@ -53,6 +60,6 @@ class addChirp extends React.Component() {
 
 
 };
-    
+*/
     
 export default addChirp;
